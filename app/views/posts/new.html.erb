@@ -7,14 +7,18 @@
   </p>
   <p>
     <%= form.label "posted_on" %>
-    <%= form.text_field "posted_on" %>
+    <%= form.date_field "posted_on" %>
   </p>
   <p>
     <%= form.label "description" %>
     <%= form.text_field "description" %>
   </p>
-  
-  <!-- So we can transfer state from the previous action to the next -->
+
+  <p>
   <%= form.hidden_field "place_id" %>
+  </p>
+
+  <p>
   <%= form.submit %>
+  </p>
 <% end %>
